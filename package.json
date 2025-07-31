@@ -1,0 +1,36 @@
+{
+  "name": "shopify-mcp-server",
+  "version": "1.0.0",
+  "description": "Comprehensive MCP server for Shopify API integration with Claude",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch & nodemon build/index.js"
+  },
+  "bin": {
+    "shopify-mcp-server": "build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "shopify",
+    "claude",
+    "ai",
+    "ecommerce"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
